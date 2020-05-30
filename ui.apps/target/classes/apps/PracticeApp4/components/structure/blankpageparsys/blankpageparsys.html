@@ -1,0 +1,20 @@
+<h3>${currentPage.title || currentPage.name}</h3>
+
+
+<!--adding central clientlib-->
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientLib.css @ categories='PracticeApp4.central'}" data-sly-unwrap/>
+
+<!--adding modular clientlib-->
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientLib.css @ categories='PracticeApp4.modular'}" data-sly-unwrap/>
+
+
+
+<!--/* Initializes the Experience Manager authoring UI */-->
+<sly data-sly-include="/libs/wcm/core/components/init/init.jsp" data-sly-unwrap/>
+
+<p>This is my Sample Page :Varsha</p>
+<div class="content" name="content" data-sly-resource="${'content' @resourceType='wcm/foundation/components/parsys'}">
+    <br>
+</div>
+
+

@@ -1,0 +1,6 @@
+com/aem/practiceapp4/core/package-info.class
+com/aem/practiceapp4/core/models/HelloWorldModel.class
+com/aem/practiceapp4/core/listeners/SimpleResourceListener.class
+com/aem/practiceapp4/core/schedulers/SimpleScheduledTask.class
+com/aem/practiceapp4/core/filters/LoggingFilter.class
+com/aem/practiceapp4/core/servlets/SimpleServlet.class

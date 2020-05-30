@@ -1,0 +1,11 @@
+<!--adding central clientlib in the page instead of componnet-->
+<!--<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientLib.css @ categories='PracticeApp4.central'}" data-sly-unwrap/>-->
+
+➤Unified Approach: This is also called as centralised approach.In this approach, we will create a global clientlibs in “/etc/clientlibs” and it just need to included it in our base page.
+
+Pros: If the project is so small, then we can go with the Unified approach.
+Cons:This approach is having a centralized clientlibs.So It is very difficult to manage and debug large clientlibs.
+
+<div class="mytextCentralClientlibComponent">
+    Text property color should be yellow: ${properties.text}
+</div>

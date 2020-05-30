@@ -1,0 +1,16 @@
+➤ Modular Approach:
+In this approach, we will create a global clientlibs in “/etc/clientlibs” and create some component level clientlibs. These  component level clientlibs should be embedded in global clientlibs.
+Pros:
+Very maintained and managed clientlibs.
+Easy to debug.
+Number of network calls will be very less.
+
+Cons:
+If there is a component level clientlibs, and the component is not dragged on a page, still the clientlibs will get loaded. It will degrade the performance of the page.
+We can’t directly include the clientlibs written in /apps on the page as on publish, anonymous user restrict /apps folder.
+
+A component level client lib [ModularClientlibComponent] is embeded in global clientlib [PracticeApp4.modula] which is included in basepage
+
+<div class="mytextModularClientlibComponent">
+    Text property color should be orange: ${properties.text}
+</div>

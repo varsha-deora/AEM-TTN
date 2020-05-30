@@ -1,0 +1,15 @@
+<!--adding E clientlib with C as dependency further having A and B as dependencies-->
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.css @ categories='EComponent'}"/>
+E is dependent on C further on A and B (4 calls)
+<div class="mytextA">
+    Text property color should be violet: ${properties.text}
+</div>
+<div class="mytextB">
+    Text property color should be blue: ${properties.text}
+</div>
+<div class="mytextC">
+    Text property color should be green: ${properties.text}
+</div>
+<div class="mytextE">
+    Text property color should be red: ${properties.text}
+</div>

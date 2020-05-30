@@ -1,0 +1,22 @@
+➤ Hybrid Approach:
+
+This is something new which AEM 6.3 provides.
+There is a concept of “proxy servlet”, with the help of this we can directly include the clientlibs(present under “/apps”) on a page.
+[This feature also works perfectly fine with AEM 6.2 with SP1 CFP13 Service/Feature Pack]
+
+In order to better isolate code from content and configuration, it is recommended to locate client libraries under /apps and expose them via /etc.clientlibs by leveraging the allowProxy property.
+Note: Don’t forgot to change the dispatcher configuration for /etc.clientlibs.
+
+Pros:
+Hybrid approach overcomes the problem of modular approach of not including /apps clientlibs directly on any page by using proxy Servlet.
+
+Cons:
+The network calls may be high,if you include component level clientlibs on component’s html.
+
+
+<!--adding hybrid clientlib-->
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientLib.css @ categories='HybridClientlibComponent'}" data-sly-unwrap/>
+
+<div class="mytextHybridClientlibComponent">
+    Text property color should be brown: ${properties.text}
+</div>

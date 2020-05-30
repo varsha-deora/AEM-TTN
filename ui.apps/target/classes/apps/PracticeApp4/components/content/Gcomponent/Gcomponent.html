@@ -1,0 +1,15 @@
+<!--G has embeded C which further depends on A and B -->
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.css @ categories='Gcomponent'}"/>
+G has embeded C which further depends on A and B (3 calls)
+<div class="mytextA">
+    Text property color should be violet: ${properties.text}
+</div>
+<div class="mytextB">
+    Text property color should be blue: ${properties.text}
+</div>
+<div class="mytextC">
+    Text property color should be green: ${properties.text}
+</div>
+<div class="mytextG">
+    Text property color should be darkgoldenrod: ${properties.text}
+</div>

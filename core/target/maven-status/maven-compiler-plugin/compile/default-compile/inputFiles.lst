@@ -1,0 +1,6 @@
+/home/varsha/PracticeApp4/core/src/main/java/com/aem/practiceapp4/core/schedulers/SimpleScheduledTask.java
+/home/varsha/PracticeApp4/core/src/main/java/com/aem/practiceapp4/core/servlets/SimpleServlet.java
+/home/varsha/PracticeApp4/core/src/main/java/com/aem/practiceapp4/core/filters/LoggingFilter.java
+/home/varsha/PracticeApp4/core/src/main/java/com/aem/practiceapp4/core/models/HelloWorldModel.java
+/home/varsha/PracticeApp4/core/src/main/java/com/aem/practiceapp4/core/listeners/SimpleResourceListener.java
+/home/varsha/PracticeApp4/core/src/main/java/com/aem/practiceapp4/core/package-info.java

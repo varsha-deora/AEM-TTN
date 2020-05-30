@@ -1,0 +1,15 @@
+<!--adding F embded D clientlib with A and B embedded-->
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.css @ categories='Fcomponent'}"/>
+F embeded D has embeded on A and B (1 calls) (Non Transitive)
+<div class="mytextA">
+    Text property color should be violet: ${properties.text}
+</div>
+<div class="mytextB">
+    Text property color should be blue: ${properties.text}
+</div>
+<div class="mytextD">
+    Text property color should be aqua: ${properties.text}
+</div>
+<div class="mytextF">
+    Text property color should be lightpink: ${properties.text}
+</div>
